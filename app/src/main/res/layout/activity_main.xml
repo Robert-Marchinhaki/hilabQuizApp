@@ -30,7 +30,8 @@
         android:layout_marginEnd="40dp"
         android:textColor="#024873"
         android:text="Escolha a dificuldade"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         >
 
     </TextView>
@@ -74,7 +75,8 @@
                 android:layout_marginTop="10dp"
                 android:textColor="#05C7F2"
                 android:text="Fácil"
-                android:textSize="16dp">
+                android:textSize="18sp"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -108,7 +110,8 @@
                 android:layout_marginTop="10dp"
                 android:textColor="#05C7F2"
                 android:text="Difícil"
-                android:textSize="16dp">
+                android:textSize="18sp"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -117,16 +120,18 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Começar"
         android:textColor="#05C7F2"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:layout_below="@+id/containerDifficulty"
         android:layout_marginTop="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_blue">
+        android:background="@drawable/round_back_blue"
+        android:textStyle="bold">
 
     </androidx.appcompat.widget.AppCompatButton>
 
