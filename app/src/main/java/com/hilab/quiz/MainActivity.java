@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                selectedTopicName = "easy";
+                selectedTopicName = "Fácil";
 
-                easyMode.setBackgroundResource(R.drawable.round_back_white_stroke10);
+                easyMode.setBackgroundResource(R.drawable.round_back_pink_stroke10);
 
-                hardMode.setBackgroundResource(R.drawable.round_back_white10);
+                hardMode.setBackgroundResource(R.drawable.round_back_blue);
             }
         });
 
@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                selectedTopicName = "hard";
+                selectedTopicName = "Difícil";
 
-                hardMode.setBackgroundResource(R.drawable.round_back_white_stroke10);
+                hardMode.setBackgroundResource(R.drawable.round_back_pink_stroke10);
 
-                easyMode.setBackgroundResource(R.drawable.round_back_white10);
+                easyMode.setBackgroundResource(R.drawable.round_back_blue);
             }
         });
 
