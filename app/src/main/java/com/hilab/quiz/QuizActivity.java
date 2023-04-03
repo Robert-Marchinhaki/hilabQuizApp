@@ -6,6 +6,8 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -217,16 +219,16 @@ public class QuizActivity extends AppCompatActivity {
             quizTimer.scheduleAtFixedRate(new TimerTask() {
                 @Override
                 public void run() {
-
-                    if(seconds == 0) {
-                        totalTimerInMin++;
-                        seconds = 59;
-                    }
-                    else if(seconds == 0 && totalTimerInMin == 0) {
+                    if(seconds == 0 && totalTimerInMin == 0) {
                         quizTimer.purge();
                         quizTimer.cancel();
 
-                        Toast.makeText(QuizActivity.this, "Acabou o tempo", Toast.LENGTH_SHORT).show();
+                        new Handler(Looper.getMainLooper()).post(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(QuizActivity.this, "Acabou o tempo!", Toast.LENGTH_SHORT).show();
+                            }
+                        });
 
                         Intent intent = new Intent(QuizActivity.this, QuizResults.class);
                         intent.putExtra("acertos", getCorrectAnswer());
@@ -234,6 +236,10 @@ public class QuizActivity extends AppCompatActivity {
                         startActivity(intent);
 
                         finish();
+                    }
+                    else if(seconds == 0) {
+                        totalTimerInMin--;
+                        seconds = 59;
                     }
                     else {
                         seconds--;
