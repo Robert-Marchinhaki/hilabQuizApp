@@ -204,8 +204,8 @@ public class QuizActivity extends AppCompatActivity {
         else {
 
             Intent intent = new Intent(QuizActivity.this, QuizResults.class);
-            intent.putExtra("Acertos", getCorrectAnswer());
-            intent.putExtra("Erros", getIncorrectAnswer());
+            intent.putExtra("acertos", getCorrectAnswer());
+            intent.putExtra("erros", getIncorrectAnswer());
             startActivity(intent);
 
             finish();
