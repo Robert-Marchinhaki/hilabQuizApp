@@ -136,14 +136,14 @@
         android:background="@drawable/round_back_white_stroke2_10"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option5"
+        android:id="@+id/nextBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="250dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:text="Opção 5"
         android:textAllCaps="false"
-        android:textColor="#024873"
-        android:background="@drawable/round_back_white_stroke2_10"/>
+        android:textColor="#fff"
+        android:background="@drawable/round_back_blue"/>
 </LinearLayout>
