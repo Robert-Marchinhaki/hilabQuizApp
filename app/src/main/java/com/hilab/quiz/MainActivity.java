@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(selectedTopicName.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Por favor selecione um nível de dificuldade", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Por favor, selecione um nível de dificuldade.", Toast.LENGTH_SHORT).show();
                 }
                 else {
 

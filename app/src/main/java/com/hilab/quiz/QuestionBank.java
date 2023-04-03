@@ -15,7 +15,7 @@ public class QuestionBank {
         final QuestionsList question5 = new QuestionsList("Qual é o maior oceano do mundo?", "Atlântico", "Pacífico", "Índico", "Ártico", "Pacífico", "");
         final QuestionsList question6 = new QuestionsList("Qual é o nome do famoso monumento na cidade do Rio de Janeiro?", "Torre Eiffel", "Estátua da Liberdade", "Cristo Redentor", "Coliseu", "Cristo Redentor", "");
         final QuestionsList question7 = new QuestionsList("Qual é o nome do criador do Facebook?", "Bill Gates", "Steve Jobs", "Mark Zuckerberg", "Jeff Bezos", "Mark Zuckerberg", "");
-        final QuestionsList question8 = new QuestionsList("Qual é a montanha mais alta do mundo?", "Monte Kilimanjaro", "Montanha do Everest", "Montanha Denali", "Monte Aconcágua", "Montanha Everest", "");
+        final QuestionsList question8 = new QuestionsList("Qual é a montanha mais alta do mundo?", "Monte Kilimanjaro", "Montanha do Everest", "Montanha Denali", "Monte Aconcágua", "Montanha do Everest", "");
         final QuestionsList question9 = new QuestionsList("Qual é a capital da Argentina?", "Santiago", "Buenos Aires", "Lima", "Bogotá", "Buenos Aires", "");
         final QuestionsList question10 = new QuestionsList("Qual é o nome da galáxia em que o nosso sistema solar está localizado?", "Via Láctea", "Andrômeda", "Nebulosa do Caranguejo", "Estrela Polar", "Via Láctea", "");
 
@@ -61,12 +61,10 @@ public class QuestionBank {
         return questionsLists;
     }
 
-    private static List<QuestionsList> getQuestion(String selectedTopicName) {
-        switch (selectedTopicName) {
-            case "Fácil":
-                return easyQuestions();
-            default:
-                return hardQuestions();
+    public static List<QuestionsList> getQuestion(String selectedTopicName) {
+        if ("Fácil".equals(selectedTopicName)) {
+            return easyQuestions();
         }
+        return hardQuestions();
     }
 }

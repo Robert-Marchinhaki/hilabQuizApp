@@ -142,7 +142,7 @@
         android:layout_marginStart="250dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="50dp"
-        android:text="Opção 5"
+        android:text="Próxima"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:background="@drawable/round_back_blue"/>

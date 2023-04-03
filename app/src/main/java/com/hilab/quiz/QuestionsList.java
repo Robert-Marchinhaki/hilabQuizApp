@@ -2,7 +2,7 @@ package com.hilab.quiz;
 
 public class QuestionsList {
 
-    private String question, option1, option2, option3, option4, answer;
+    final String question, option1, option2, option3, option4, answer;
     private String userSelectedAnswer;
 
     public QuestionsList(String question, String option1, String option2, String option3, String option4, String answer, String userSelectedAnswer) {
@@ -41,5 +41,9 @@ public class QuestionsList {
 
     public String getUserSelectedAnswer() {
         return userSelectedAnswer;
+    }
+
+    public void setUserSelectedAnswer(String userSelectedAnswer) {
+        this.userSelectedAnswer = userSelectedAnswer;
     }
 }
