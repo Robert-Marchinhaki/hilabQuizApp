@@ -3,4 +3,11 @@
     <string name="easy_mode">Modo Fácil</string>
     <string name="hard_mode">Modo Difícil</string>
     <string name="about">Sobre</string>
+    <string name="quiz_logo">Quiz logo</string>
+    <string name="escolha_a_dificuldade">Escolha a dificuldade</string>
+    <string name="emoticon_sorrindo">Emoticon sorrindo</string>
+    <string name="facil">Fácil</string>
+    <string name="emoticon_assustado">Emoticon assustado</string>
+    <string name="dificilTexto">Difícil</string>
+    <string name="comecarTexto">Começar</string>
 </resources>

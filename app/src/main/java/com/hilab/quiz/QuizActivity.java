@@ -3,6 +3,7 @@ package com.hilab.quiz;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -176,7 +177,7 @@ public class QuizActivity extends AppCompatActivity {
         currentQuestionPosition++;
 
         if((currentQuestionPosition+1) == questionsList.size()) {
-            nextBtn.setText("Quiz enviado");
+            nextBtn.setText("Enviar quiz");
         }
 
         if((currentQuestionPosition < questionsList.size())) {

@@ -1,6 +1,8 @@
 package com.hilab.quiz;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class QuestionBank {
@@ -30,6 +32,8 @@ public class QuestionBank {
         questionsLists.add(question9);
         questionsLists.add(question10);
 
+        Collections.shuffle(questionsLists);
+
         return questionsLists;
     }
 
@@ -57,6 +61,8 @@ public class QuestionBank {
         questionsLists.add(question8);
         questionsLists.add(question9);
         questionsLists.add(question10);
+
+        Collections.shuffle(questionsLists);
 
         return questionsLists;
     }
