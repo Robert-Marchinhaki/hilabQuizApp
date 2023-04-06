@@ -59,6 +59,10 @@ public class QuizActivity extends AppCompatActivity {
 
         final String getSelectedTopicName = getIntent().getStringExtra("selectedTopic");
 
+        if (getSelectedTopicName.equals("Fácil")) {
+            totalTimerInMin += 1;
+        }
+
         topicName.setText(getSelectedTopicName);
 
         questionsList = QuestionBank.getQuestion(getSelectedTopicName);
